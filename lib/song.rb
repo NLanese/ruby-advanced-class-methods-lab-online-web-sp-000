@@ -58,6 +58,14 @@ class Song
     return fileNameArray
   end
 
+  def self.create_from_filename
+    fileNameArray = filename.split(" - ")
+    binding.pry
+    @artist_name = fileNameArray[0]
+    fileNameArray = fileNameArray.shift
+    return fileNameArray
+  end
+
   def self.alphabetical
     i = 0
     rArray = []
