@@ -58,6 +58,7 @@ class Song
     newSong.artist_name=fileNameArray[0]
     fileNameArray[1] = fileNameArray[1].split(".")
     newSong.name=fileNameArray[1]
+    return newSong
   end
 
   def self.create_from_filename( filename )
