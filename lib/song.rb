@@ -52,12 +52,13 @@ class Song
   end
 
   def self.new_from_filename( filename )
+    newSong = Song.new
     fileNameArray = filename.split(" - ")
     #binding.pry
-    @artist_name = fileNameArray[0]
+    self.artist_name=fileNameArray[0]
     fileNameArray = fileNameArray.shift
     fileNameArray = fileNameArray[0].split(".")
-    @name = fileNameArray[0]
+    self.name=fileNameArray[0]
   end
 
   def self.create_from_filename( filename )
