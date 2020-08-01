@@ -56,7 +56,7 @@ class Song
     fileNameArray = filename.split(" - ")
     #binding.pry
     newSong.artist_name=fileNameArray[0]
-    fileNameArray = fileNameArray[1].split(".")
+    fileNameArray[1] = fileNameArray[1].split(".")
     newSong.name=fileNameArray[1]
   end
 
