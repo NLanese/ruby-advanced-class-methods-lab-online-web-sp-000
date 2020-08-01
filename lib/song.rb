@@ -56,7 +56,8 @@ class Song
     binding.pry
     @artist_name = fileNameArray[0]
     fileNameArray = fileNameArray.shift
-    return fileNameArray
+    fileNameArray = fileNameArray[0].split(".")
+    @name = fileNameArray[0]
   end
 
   def self.create_from_filename( filename )
