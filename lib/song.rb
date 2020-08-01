@@ -53,7 +53,7 @@ class Song
 
   def self.new_from_filename( filename )
     fileNameArray = filename.split(" - ")
-    binding.pry
+    #binding.pry
     @artist_name = fileNameArray[0]
     fileNameArray = fileNameArray.shift
     fileNameArray = fileNameArray[0].split(".")
